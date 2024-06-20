@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugoplate</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/lib/fontawesome.css" />
+    <link rel="stylesheet" href="./assets/lib/owlmin.css" />
+    <!-- <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" /> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/lib/tailwind.js"></script>
+</head>
+
+<body>
+    <nav
+        class="flex justify-between items-center relative w-full lg:w-auto bg-[#1C1C1C] lg:px-20 lg:py-2 p-3 shadow-sm">
+        <div class="flex justify-between items-center w-full lg:w-auto">
+            <img src="./assets/images/logo.webp" alt="" class="w-40">
+            <button class="lg:hidden" onclick="toggle()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div id="navlinks"
+            class="lg:flex hidden justify-between items-center lg:relative absolute left-0 top-full lg:bg-transparent bg-sky-500 w-full lg:w-auto">
+            <ul
+                class="flex text-white lg:flex-row flex-col items-start p-5 lg:items-center lg:gap-10 gap-4 w-full lg:w-auto">
+                <li>
+                    <a class="text-base font-semibold" href="">Home</a>
+                </li>
+                <li>
+                    <a class="text-base font-semibold" href="">About Us</a>
+                </li>
+                <li>
+                    <a class="text-base font-semibold" href="">Blogs</a>
+                </li>
+                <li>
+                    <a class="text-base font-semibold" href="">Service</a>
+                </li>
+                <li>
+                    <a class="text-base font-semibold" href="">Portfolio</a>
+                </li>
+                <li>
+                    <a class="text-base font-semibold" href="">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- =============Home section========== -->
+    <section class="w-full flex justify-center items-center  h-screen">
+        <div class="container mx-auto lg:px-40 ">
+            <div class=" lg:px-52 text-center">
+                <div class="">
+                    <h1 class="text-5xl font-bold text-white leading-snug">The Ultimate Starter Template You Need To
+                        Start Your
+                        Hugo Project
+                    </h1>
+                    <p class="text-gray-200 tracking-wide text-base opacity py-4 leading-8">Hugoplate is a free starter
+                        template
+                        built
+                        with
+                        Hugo and
+                        TailwindCSS,
+                        providing everything you
+                        need to jumpstart your Hugo project and save valuable time.</p>
+                    <div class="pt-3">
+                        <a href=""
+                            class="bg-white text-base font-semibold px-6 py-2 rounded-md inline-flex items-center gap-4">Get
+                            Started For Free <span class="iconify text-xl" data-icon="ph:arrow-right-bold"></span></a>
+                    </div>
+                    <div class="img">
+                        <img src="./assets/images/banner.webp" alt="" class="w-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========About Section============ -->
+    <section class="w-full py-32 bg-[#222222] lg:px-32">
+        <div class="container mx-auto">
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 items-center">
+                <div class="w-[70%]">
+                    <img src="./assets/images/about.webp" alt="" class="w-full object-cover">
+                </div>
+                <div class="">
+                    <h1 class="text-4xl font-bold text-white leading-snug">What’s Included in Hugoplate</h1>
+                    <p class="text-gray-200 tracking-wide text-base opacity py-4 leading-8">Hugoplate is a comprehensive
+                        starter template that includes everything you need to get started
+                        with your Hugo project. What’s Included in Hugoplate</p>
+                    <ul class="text-white leading-10">
+                        <li class="flex items-center gap-2 mb-0 p-0"> <span class="iconify mb-0 text-lg"
+                                data-icon="mingcute:check-line"></span>10+ Pre-build pages</li>
+                        <li class="flex items-center gap-2 mb-0 p-0"> <span class="iconify mb-0 text-lg"
+                                data-icon="mingcute:check-line"></span>95+ Google Pagespeed Score</li>
+                        <li class="flex items-center gap-2 mb-0 p-0"> <span class="iconify mb-0 text-lg"
+                                data-icon="mingcute:check-line"></span>Build with Hugo and TailwindCSS for easy and
+                            customizable styling</li>
+                        <li class="flex items-center gap-2 mb-0 p-0"> <span class="iconify mb-0 text-lg"
+                                data-icon="mingcute:check-line"></span>Fully responsive on all devices</li>
+                        <li class="flex items-center gap-2 mb-0 p-0"> <span class="iconify mb-0 text-lg"
+                                data-icon="mingcute:check-line"></span>SEO-optimized for better search engine rankings
+                        </li>
+                        <li class="flex items-center gap-2 mb-0 p-0"> <span class="iconify mb-0 text-lg"
+                                data-icon="mingcute:check-line"></span>Open-source and free for personal and commercial
+                            use</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full py-32 lg:px-32">
+        <div class="container mx-auto">
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 items-center">
+                <div class="">
+                    <h1 class="text-4xl font-bold text-white leading-snug">Discover the Key Features Of Hugo</h1>
+                    <p class="text-gray-200 tracking-wide text-base opacity py-4 leading-8">Hugo is an all-in-one web
+                        framework for building fast, content-focused websites. It offers a range of exciting features
+                        for developers and website creators. Some of the key features are:</p>
+                    <ul class="text-white leading-10">
+                        <li class="flex items-center gap-2 mb-0 p-0"> <span class="iconify mb-0 text-lg"
+                                data-icon="mingcute:check-line"></span>Zero JS, by default: No JavaScript runtime
+                            overhead to slow you down.</li>
+                        <li class="flex items-center gap-2 mb-0 p-0"> <span class="iconify mb-0 text-lg"
+                                data-icon="mingcute:check-line"></span>Customizable: Tailwind, MDX, and 100+ other
+                            integrations to choose from.</li>
+                        <li class="flex items-center gap-2 mb-0 p-0"> <span class="iconify mb-0 text-lg"
+                                data-icon="mingcute:check-line"></span>UI-agnostic: Supports React, Preact, Svelte, Vue,
+                            Solid, Lit and more.</li>
+
+
+                    </ul>
+                    <div class="py-5">
+                        <a href=""
+                            class="bg-white text-base font-semibold px-5 py-3 rounded-md inline-flex items-center gap-4">Get
+                            Started For Free <span class="iconify text-xl" data-icon="ph:arrow-right-bold"></span></a>
+                    </div>
+                </div>
+                <div class="flex justify-end">
+                    <div class="w-[75%]">
+                        <img src="./assets/images/feature.webp" alt="" class="w-full object-cover">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========About Section============ -->
+    <section class="w-full py-32 bg-[#222222] lg:px-32">
+        <div class="container mx-auto">
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 items-center">
+                <div class="w-[70%]">
+                    <img src="./assets/images/feature-1.webp" alt="" class="w-full object-cover">
+                </div>
+                <div class="">
+                    <h1 class="text-4xl font-bold text-white leading-snug">The Top Reasons to Choose Hugo for Your Hugo
+                        Project</h1>
+                    <p class="text-gray-200 tracking-wide text-base opacity py-4 leading-8">With Hugo, you can build
+                        modern and content-focused websites without sacrificing performance or ease of use.</p>
+                    <ul class="text-white leading-10">
+                        <li class="flex gap-2 items-center"><span class="iconify text-lg"
+                                data-icon="mingcute:check-line"></span>Instantly load static sites for better user
+                            experience and SEO.</li>
+                        <li class="flex gap-2 items-center"><span class="iconify text-lg"
+                                data-icon="mingcute:check-line"></span>Intuitive syntax and support for popular
+                            frameworks.</li>
+                        <li class="flex gap-2 items-center"><span class="iconify text-lg"
+                                data-icon="mingcute:check-line"></span>Use
+                            any front-end library or framework, or build
+                            custom components.</li>
+                        <li class="flex gap-2 items-center"><span class="iconify text-lg"
+                                data-icon="mingcute:check-line"></span>Built on cutting-edge technology to keep your
+                            projects.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full py-32 lg:px-32">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold text-white leading-snug lg:px-80">What Users Are Saying About Hugoplate
+                </h1>
+                <p class="text-gray-200 tracking-wide text-base opacity py-4 leading-8 lg:px-72">Don’t just take our
+                    word for it
+                    - hear from some of our satisfied users! Check out some of our
+                    testimonials below to see what others are saying about Hugoplate.</p>
+            </div>
+            <div class="py-10 flex justify-center items-center">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="w-full  lg:w-auto bg-[#222222] shadow-lg rounded-lg px-10 py-6">
+                            <div class="w-8 ">
+                                <img src="./assets/images/qoute.png" alt="" class="w-16 invert">
+                            </div>
+                            <div class="py-8 text-white">
+                                <p class="opacity-50">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Qui iusto illo molestias,
+                                    assumenda expedita commodi inventore non
+                                    itaque molestiae voluptatum dolore, facilis
+                                    sapiente, repellat veniam.</p>
+
+                                <div class="flex gap-6 items-center pt-5">
+                                    <div class="w-12">
+                                        <img src="./assets/images/review.webp" alt="" class="w-20">
+                                    </div>
+                                    <div>
+                                        <h2 class="text-2xl font-semibold">Harsh Kushawaha</h2>
+                                        <p class="mb-0">Frontend Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="w-full  lg:w-auto bg-[#222222] shadow-lg rounded-lg px-10 py-6">
+                            <div class="w-8 ">
+                                <img src="./assets/images/qoute.png" alt="" class="w-16 invert">
+                            </div>
+                            <div class="py-8 text-white">
+                                <p class="opacity-50">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Qui iusto illo molestias,
+                                    assumenda expedita commodi inventore non
+                                    itaque molestiae voluptatum dolore, facilis
+                                    sapiente, repellat veniam.</p>
+
+                                <div class="flex gap-6 items-center pt-5">
+                                    <div class="w-12">
+                                        <img src="./assets/images/review.webp" alt="" class="w-20">
+                                    </div>
+                                    <div>
+                                        <h2 class="text-2xl font-semibold">Utkarsh Kushawaha</h2>
+                                        <p class="mb-0">React Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="w-full  lg:w-auto bg-[#222222] shadow-lg rounded-lg px-10 py-6">
+                            <div class="w-8 ">
+                                <img src="./assets/images/qoute.png" alt="" class="w-16 invert">
+                            </div>
+                            <div class="py-8 text-white">
+                                <p class="opacity-50">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Qui iusto illo molestias,
+                                    assumenda expedita commodi inventore non
+                                    itaque molestiae voluptatum dolore, facilis
+                                    sapiente, repellat veniam.</p>
+
+                                <div class="flex gap-6 items-center pt-5">
+                                    <div class="w-12">
+                                        <img src="./assets/images/review.webp" alt="" class="w-20">
+                                    </div>
+                                    <div>
+                                        <h2 class="text-2xl font-semibold">Pinku Rathour</h2>
+                                        <p class="mb-0">Frontend Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="w-full  lg:w-auto bg-[#222222] shadow-lg rounded-lg px-10 py-6">
+                            <div class="w-8 ">
+                                <img src="./assets/images/qoute.png" alt="" class="w-16 invert">
+                            </div>
+                            <div class="py-8 text-white">
+                                <p class="opacity-50">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Qui iusto illo molestias,
+                                    assumenda expedita commodi inventore non
+                                    itaque molestiae voluptatum dolore, facilis
+                                    sapiente, repellat veniam.</p>
+
+                                <div class="flex gap-6 items-center pt-5">
+                                    <div class="w-12">
+                                        <img src="./assets/images/review.webp" alt="" class="w-20">
+                                    </div>
+                                    <div>
+                                        <h2 class="text-2xl font-semibold">Sujeet Kushawaha</h2>
+                                        <p class="mb-0">Node Js Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-white bg-[#222222]">
+        <div class="flex justify-between items-center w-full lg:w-auto  lg:px-32 lg:py-14 p-3">
+            <div class="">
+                <img src="./assets/images/logo.webp" alt="" class="w-44">
+            </div>
+            <div class="links w-full lg:w-auto">
+                <ul class="flex justify-between items-center gap-5 ">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <div class="flex justify-between items-center gap-5">
+                    <a href="" class="bg-white flex justify-center items-center rounded-lg p-2"><span
+                            class="iconify text-black" data-icon="bi:facebook"></span></a>
+                    <a href="" class="bg-white flex justify-center items-center rounded-lg p-2"><span
+                            class="iconify text-black" data-icon="bi:instagram"></span></a>
+                    <a href="" class="bg-white flex justify-center items-center rounded-lg p-2"><span
+                            class="iconify text-black" data-icon="entypo-social:linkedin-with-circle"></span></a>
+                    <a href="" class="bg-white flex justify-center items-center rounded-lg p-2"><span
+                            class="iconify text-black" data-icon="pajamas:github"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-8 borders">
+            <p class="mb-0">&copy; Designed by Pinku Rathour.</p>
+        </div>
+    </footer>
+</body>
+<script src="./assets/lib/jquery.js"></script>
+<script src="./assets/lib/owlmin.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js"></script>
+<script src="./assets/js/main.js"></script>
+
+
+
+</html>

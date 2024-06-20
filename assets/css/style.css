@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Signika:wght@300..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  font-family: "Heebo", sans-serif;
+}
+p {
+  font-family: "Heebo", sans-serif;
+}
+body {
+  background-color: #1c1c1c;
+}
+
+h1 {
+  font-family: "Signika", sans-serif;
+}
+button {
+  font-family: "Heebo", sans-serif;
+}
+.owl-nav .dots {
+  color: #ffffff;
+}
+.borders {
+  border-top: 1px solid #595959;
+}
